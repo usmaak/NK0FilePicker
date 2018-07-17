@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		546D59C520FCEF03000BB3AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D59C420FCEF03000BB3AE /* AppDelegate.swift */; };
-		546D59C720FCEF03000BB3AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D59C620FCEF03000BB3AE /* ViewController.swift */; };
+		546D59C720FCEF03000BB3AE /* MainViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D59C620FCEF03000BB3AE /* MainViewVC.swift */; };
 		546D59CA20FCEF03000BB3AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546D59C820FCEF03000BB3AE /* Main.storyboard */; };
 		546D59CD20FCEF03000BB3AE /* NK0FilePicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 546D59CB20FCEF03000BB3AE /* NK0FilePicker.xcdatamodeld */; };
 		546D59CF20FCEF03000BB3AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546D59CE20FCEF03000BB3AE /* Assets.xcassets */; };
 		546D59D220FCEF03000BB3AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546D59D020FCEF03000BB3AE /* LaunchScreen.storyboard */; };
+		546D59DA20FCF10A000BB3AE /* ColorSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D59D920FCF10A000BB3AE /* ColorSelectorVC.swift */; };
+		546D59DC20FD5382000BB3AE /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D59DB20FD5382000BB3AE /* UIColorExt.swift */; };
+		AF8FE0B26B465E067B83708D /* Pods_NK0FilePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5568D114D3DD8EB247CA2BCD /* Pods_NK0FilePicker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		546D59C120FCEF03000BB3AE /* NK0FilePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NK0FilePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		546D59C420FCEF03000BB3AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		546D59C620FCEF03000BB3AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		546D59C620FCEF03000BB3AE /* MainViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewVC.swift; sourceTree = "<group>"; };
 		546D59C920FCEF03000BB3AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		546D59CC20FCEF03000BB3AE /* NK0FilePicker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NK0FilePicker.xcdatamodel; sourceTree = "<group>"; };
 		546D59CE20FCEF03000BB3AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		546D59D120FCEF03000BB3AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		546D59D320FCEF03000BB3AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		546D59D920FCF10A000BB3AE /* ColorSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelectorVC.swift; sourceTree = "<group>"; };
+		546D59DB20FD5382000BB3AE /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
+		5568D114D3DD8EB247CA2BCD /* Pods_NK0FilePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NK0FilePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69075F07C0F577C75D3B42F5 /* Pods-NK0FilePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NK0FilePicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-NK0FilePicker/Pods-NK0FilePicker.release.xcconfig"; sourceTree = "<group>"; };
+		CD32DA27553579E968878D5A /* Pods-NK0FilePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NK0FilePicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NK0FilePicker/Pods-NK0FilePicker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8FE0B26B465E067B83708D /* Pods_NK0FilePicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43DF57CBA59F3224F30BEE1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5568D114D3DD8EB247CA2BCD /* Pods_NK0FilePicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		546D59B820FCEF03000BB3AE = {
 			isa = PBXGroup;
 			children = (
 				546D59C320FCEF03000BB3AE /* NK0FilePicker */,
 				546D59C220FCEF03000BB3AE /* Products */,
+				F66524BE280ADAD857080AFA /* Pods */,
+				43DF57CBA59F3224F30BEE1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +76,25 @@
 			isa = PBXGroup;
 			children = (
 				546D59C420FCEF03000BB3AE /* AppDelegate.swift */,
-				546D59C620FCEF03000BB3AE /* ViewController.swift */,
+				546D59D920FCF10A000BB3AE /* ColorSelectorVC.swift */,
+				546D59C620FCEF03000BB3AE /* MainViewVC.swift */,
 				546D59C820FCEF03000BB3AE /* Main.storyboard */,
 				546D59CE20FCEF03000BB3AE /* Assets.xcassets */,
 				546D59D020FCEF03000BB3AE /* LaunchScreen.storyboard */,
 				546D59D320FCEF03000BB3AE /* Info.plist */,
 				546D59CB20FCEF03000BB3AE /* NK0FilePicker.xcdatamodeld */,
+				546D59DB20FD5382000BB3AE /* UIColorExt.swift */,
 			);
 			path = NK0FilePicker;
+			sourceTree = "<group>";
+		};
+		F66524BE280ADAD857080AFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD32DA27553579E968878D5A /* Pods-NK0FilePicker.debug.xcconfig */,
+				69075F07C0F577C75D3B42F5 /* Pods-NK0FilePicker.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 546D59D620FCEF03000BB3AE /* Build configuration list for PBXNativeTarget "NK0FilePicker" */;
 			buildPhases = (
+				F343D30F6E53204782CAF039 /* [CP] Check Pods Manifest.lock */,
 				546D59BD20FCEF03000BB3AE /* Sources */,
 				546D59BE20FCEF03000BB3AE /* Frameworks */,
 				546D59BF20FCEF03000BB3AE /* Resources */,
+				B6DFC047B64E4E5596341990 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +165,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B6DFC047B64E4E5596341990 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NK0FilePicker/Pods-NK0FilePicker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/Colorkit/Colorkit.framework",
+				"${BUILT_PRODUCTS_DIR}/NKOColorPickerView/NKOColorPickerView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Colorkit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NKOColorPickerView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NK0FilePicker/Pods-NK0FilePicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F343D30F6E53204782CAF039 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NK0FilePicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		546D59BD20FCEF03000BB3AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				546D59C720FCEF03000BB3AE /* ViewController.swift in Sources */,
+				546D59C720FCEF03000BB3AE /* MainViewVC.swift in Sources */,
+				546D59DA20FCF10A000BB3AE /* ColorSelectorVC.swift in Sources */,
 				546D59C520FCEF03000BB3AE /* AppDelegate.swift in Sources */,
+				546D59DC20FD5382000BB3AE /* UIColorExt.swift in Sources */,
 				546D59CD20FCEF03000BB3AE /* NK0FilePicker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +359,7 @@
 		};
 		546D59D720FCEF03000BB3AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD32DA27553579E968878D5A /* Pods-NK0FilePicker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +378,7 @@
 		};
 		546D59D820FCEF03000BB3AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69075F07C0F577C75D3B42F5 /* Pods-NK0FilePicker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
